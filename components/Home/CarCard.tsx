@@ -22,7 +22,8 @@ hover:border-[1px] cursor-pointer duration-50
 border-blue-500 '>
     <h2 className='text-[20px] font-medium mb-2'>{car.name}</h2>
     <h2 className='text-[28px] font-bold mb-2'>
-        <span className='text-[12px] font-light'>$ </span>
+        <span className='text-[12px] font-light'>₹
+ </span>
         {car.price}
         <span className='text-[12px] font-light'> /day</span></h2>
         <div className='flex justify-center'>
@@ -44,7 +45,7 @@ border-blue-500 '>
         </div>
         <div className=' text-center text-gray-500 '>
             <FaGasPump className="w-full text-[22px] mb-2" />
-            <h2 className='line-clamp-5 text-[14px] font-light'>{car.carAvg} MPG</h2>
+            <h2 className='line-clamp-5 text-[14px] font-light'>{car.carAvg} Milage</h2>
         </div>
     </div>
     <button className='hidden group-hover:flex bg-gradient-to-r
