@@ -1,22 +1,14 @@
-
-
 import React, { FC } from "react";
 import Image from "next/image";
 import ToastMsg from "../ToastMsg";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-
-interface HeroProps{
-  onExploreClick: ()=> void;
+interface HeroProps {
+  onExploreClick: () => void;
 }
 
-
-const Hero: FC<HeroProps> = ({onExploreClick}) => {
-
-
-  
-
+const Hero: FC<HeroProps> = ({ onExploreClick }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 ">
       <div>
@@ -30,11 +22,11 @@ const Hero: FC<HeroProps> = ({onExploreClick}) => {
           Book the selected car effortlessly, Pay for driving only, Book the Car
           Now
         </h2>
-        <button 
+        <button
           className="p-2 mt-5 bg-blue-500 text-white
             px-4 rounded-full 
             hover:scale-105 transition-all"
-            onClick={onExploreClick}
+          onClick={onExploreClick}
         >
           Explore Cars
         </button>
